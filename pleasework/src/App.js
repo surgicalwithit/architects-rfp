@@ -1,6 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Header from './pages/Header'
+import { BrowserRouter } from "react-router-dom"
+
 //TEST 
 
 function App() {
@@ -96,12 +99,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <p>Click to add event to Google Calendar</p>
         <p style={{fontSize: 18}}>Uncomment the get events code to get events</p>
         <p style={{fontSize: 18}}>Don't forget to add your Client Id and Api key</p>
         <button style={{width: 100, height: 50}} onClick={handleClick}>Add Event</button>
       </header>
+      
     </div>
   );
 }
